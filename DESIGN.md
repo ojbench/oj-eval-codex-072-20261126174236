@@ -25,9 +25,8 @@ initial 1 MiB allocation and a 256 MiB address limit.
 Build and test:
 
 ```sh
-cmake -S . -B build
-cmake --build build -j2
-python3 tests/test_simulator.py ./build/code
+make
+make test
 ```
 
 The test-data path listed in README.md was absent in the supplied environment.
