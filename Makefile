@@ -1,10 +1,10 @@
 CXX = g++
-CXXFLAGS = -std=c++17 -O2 -Wall -Wextra -Wpedantic
+CXXFLAGS = -std=c++14 -O2 -Wall -Wextra -Wpedantic
 
 .PHONY: all test clean
 all: code
 
-code: src/main.cpp
+code: main.cpp src/main.cpp
 	$(CXX) $(CXXFLAGS) $< -o $@
 
 test: code
